@@ -1,18 +1,19 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.slc.smartone",
-  "version": "2.2.5",
+  "version": "2.2.11",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "platforms": [
-    "local"
+    "local",
+    "cloud"
   ],
   "brandColor": "#202123",
   "name": {
     "en": "SLC SmartOne"
   },
   "description": {
-    "en": "We constantly work on developing more powerful, efficient and cost-effective LED light fixtures."
+    "en": "Powerful, efficient and cost-effective LED light fixtures."
   },
   "category": [
     "lights"
@@ -3326,7 +3327,7 @@
       {
         "id": "ZG2833K2_EU07_on",
         "title": {
-          "en": "On"
+          "en": "Turned on"
         },
         "args": [
           {
@@ -3339,7 +3340,7 @@
       {
         "id": "ZG2833K2_EU07_off",
         "title": {
-          "en": "Off"
+          "en": "Turned off"
         },
         "args": [
           {
@@ -3352,7 +3353,7 @@
       {
         "id": "ZG2833K2_EU07_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Level moved"
         },
         "tokens": [
           {
@@ -3360,16 +3361,14 @@
             "type": "number",
             "title": {
               "en": "Move mode"
-            },
-            "example": 0
+            }
           },
           {
             "name": "rate",
             "type": "number",
             "title": {
               "en": "Rate"
-            },
-            "example": 0.2
+            }
           }
         ],
         "args": [
@@ -3383,7 +3382,7 @@
       {
         "id": "ZG2833K2_EU07_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Level stopped"
         },
         "args": [
           {
@@ -3396,7 +3395,7 @@
       {
         "id": "ZG2833K8_EU05_on",
         "title": {
-          "en": "On"
+          "en": "Turned on"
         },
         "titleFormatted": {
           "en": "Group [[group]] on"
@@ -3445,7 +3444,7 @@
       {
         "id": "ZG2833K8_EU05_off",
         "title": {
-          "en": "Off"
+          "en": "Turned off"
         },
         "titleFormatted": {
           "en": "Group [[group]] off"
@@ -3494,7 +3493,7 @@
       {
         "id": "ZG2833K8_EU05_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Level moved"
         },
         "titleFormatted": {
           "en": "Group [[group]] move level"
@@ -3545,23 +3544,21 @@
             "type": "number",
             "title": {
               "en": "Move mode"
-            },
-            "example": 0
+            }
           },
           {
             "name": "rate",
             "type": "number",
             "title": {
               "en": "Rate"
-            },
-            "example": 0.2
+            }
           }
         ]
       },
       {
         "id": "ZG2833K8_EU05_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Level stopped"
         },
         "titleFormatted": {
           "en": "Group [[group]] stop level"
@@ -3610,7 +3607,7 @@
       {
         "id": "ZGRC_KEY_002_on",
         "title": {
-          "en": "On"
+          "en": "Turned on"
         },
         "args": [
           {
@@ -3623,7 +3620,7 @@
       {
         "id": "ZGRC_KEY_002_off",
         "title": {
-          "en": "Off"
+          "en": "Turned off"
         },
         "args": [
           {
@@ -3636,7 +3633,7 @@
       {
         "id": "ZGRC_KEY_002_level_step_with_onoff",
         "title": {
-          "en": "Step level (with On/Off)"
+          "en": "Level stepped"
         },
         "args": [
           {
@@ -3651,31 +3648,28 @@
             "type": "number",
             "title": {
               "en": "Mode"
-            },
-            "example": 0
+            }
           },
           {
             "name": "step_size",
             "type": "number",
             "title": {
               "en": "Step size"
-            },
-            "example": 0.2
+            }
           },
           {
             "name": "transition_time",
             "type": "number",
             "title": {
               "en": "Transition time"
-            },
-            "example": 0
+            }
           }
         ]
       },
       {
         "id": "ZGRC_KEY_002_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Level moved"
         },
         "args": [
           {
@@ -3690,23 +3684,21 @@
             "type": "number",
             "title": {
               "en": "Move mode"
-            },
-            "example": 0
+            }
           },
           {
             "name": "rate",
             "type": "number",
             "title": {
               "en": "Rate"
-            },
-            "example": 0.2
+            }
           }
         ]
       },
       {
         "id": "ZGRC_KEY_002_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Level stopped"
         },
         "args": [
           {
@@ -3719,7 +3711,7 @@
       {
         "id": "ZGRC_KEY_002_move_to_color_temperature",
         "title": {
-          "en": "Move to color temperature"
+          "en": "Color temperature moved"
         },
         "args": [
           {
@@ -3734,23 +3726,21 @@
             "type": "number",
             "title": {
               "en": "Color temperature"
-            },
-            "example": 0
+            }
           },
           {
             "name": "transition_time",
             "type": "number",
             "title": {
               "en": "Transition time"
-            },
-            "example": 0
+            }
           }
         ]
       },
       {
         "id": "ZGRC_KEY_002_move_color_temperature",
         "title": {
-          "en": "Move color temperature"
+          "en": "Color temperature moved"
         },
         "args": [
           {
@@ -3765,23 +3755,21 @@
             "type": "number",
             "title": {
               "en": "Move mode"
-            },
-            "example": 0
+            }
           },
           {
             "name": "rate",
             "type": "number",
             "title": {
               "en": "Rate"
-            },
-            "example": 0.2
+            }
           }
         ]
       },
       {
         "id": "ZGRC_KEY_002_stop_move_step",
         "title": {
-          "en": "Stop move step"
+          "en": "Move step stopped"
         },
         "hint": {
           "en": "The stop move step command is provided to allow Move and Step commands to be stopped."
@@ -3797,7 +3785,7 @@
       {
         "id": "ZGRC_KEY_005_on",
         "title": {
-          "en": "On"
+          "en": "Turned on"
         },
         "args": [
           {
@@ -3810,7 +3798,7 @@
       {
         "id": "ZGRC_KEY_005_off",
         "title": {
-          "en": "Off"
+          "en": "Turned off"
         },
         "args": [
           {
@@ -3823,7 +3811,7 @@
       {
         "id": "ZGRC_KEY_005_level_step_with_onoff",
         "title": {
-          "en": "Step level (with On/Off)"
+          "en": "Level stepped"
         },
         "args": [
           {
@@ -3838,31 +3826,28 @@
             "type": "number",
             "title": {
               "en": "Mode"
-            },
-            "example": 0
+            }
           },
           {
             "name": "step_size",
             "type": "number",
             "title": {
               "en": "Step size"
-            },
-            "example": 0.2
+            }
           },
           {
             "name": "transition_time",
             "type": "number",
             "title": {
               "en": "Transition time"
-            },
-            "example": 0
+            }
           }
         ]
       },
       {
         "id": "ZGRC_KEY_005_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Level moved"
         },
         "args": [
           {
@@ -3877,23 +3862,21 @@
             "type": "number",
             "title": {
               "en": "Move mode"
-            },
-            "example": 0
+            }
           },
           {
             "name": "rate",
             "type": "number",
             "title": {
               "en": "Rate"
-            },
-            "example": 0.2
+            }
           }
         ]
       },
       {
         "id": "ZGRC_KEY_005_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Level stopped"
         },
         "args": [
           {
@@ -3906,7 +3889,7 @@
       {
         "id": "ZGRC_KEY_005_move_to_color_temperature",
         "title": {
-          "en": "Move to color temperature"
+          "en": "Color temperature moved"
         },
         "args": [
           {
@@ -3921,23 +3904,21 @@
             "type": "number",
             "title": {
               "en": "Color temperature"
-            },
-            "example": 0
+            }
           },
           {
             "name": "transition_time",
             "type": "number",
             "title": {
               "en": "Transition time"
-            },
-            "example": 0
+            }
           }
         ]
       },
       {
         "id": "ZGRC_KEY_005_move_color_temperature",
         "title": {
-          "en": "Move color temperature"
+          "en": "Color temperature moved"
         },
         "args": [
           {
@@ -3952,23 +3933,21 @@
             "type": "number",
             "title": {
               "en": "Move mode"
-            },
-            "example": 0
+            }
           },
           {
             "name": "rate",
             "type": "number",
             "title": {
               "en": "Rate"
-            },
-            "example": 0.2
+            }
           }
         ]
       },
       {
         "id": "ZGRC_KEY_005_stop_move_step",
         "title": {
-          "en": "Stop move step"
+          "en": "Move step stopped"
         },
         "hint": {
           "en": "The stop move step command is provided to allow Move and Step commands to be stopped."
@@ -3984,7 +3963,7 @@
       {
         "id": "ZGRC_KEY_005_move_to_color",
         "title": {
-          "en": "Move to color (XY)"
+          "en": "Color XY moved"
         },
         "args": [
           {
@@ -3999,31 +3978,28 @@
             "type": "number",
             "title": {
               "en": "Color X"
-            },
-            "example": 0.1
+            }
           },
           {
             "name": "color_y",
             "type": "number",
             "title": {
               "en": "Color Y"
-            },
-            "example": 0.1
+            }
           },
           {
             "name": "transition_time",
             "type": "number",
             "title": {
               "en": "Transition time"
-            },
-            "example": 0
+            }
           }
         ]
       },
       {
         "id": "ZGRC_KEY_005_move_hue",
         "title": {
-          "en": "Move hue"
+          "en": "Hue moved"
         },
         "args": [
           {
@@ -4038,23 +4014,21 @@
             "type": "number",
             "title": {
               "en": "Move mode"
-            },
-            "example": 0
+            }
           },
           {
             "name": "rate",
             "type": "number",
             "title": {
               "en": "Rate"
-            },
-            "example": 0.2
+            }
           }
         ]
       },
       {
         "id": "ZGRC_KEY_014_on",
         "title": {
-          "en": "On"
+          "en": "Turned on"
         },
         "titleFormatted": {
           "en": "Group [[group]] on"
@@ -4097,7 +4071,7 @@
       {
         "id": "ZGRC_KEY_014_off",
         "title": {
-          "en": "Off"
+          "en": "Turned off"
         },
         "titleFormatted": {
           "en": "Group [[group]] off"
@@ -4140,7 +4114,7 @@
       {
         "id": "ZGRC_KEY_014_recall_scene",
         "title": {
-          "en": "Recall scene"
+          "en": "Scene recalled"
         },
         "titleFormatted": {
           "en": "Group [[group]] recall scene"
@@ -4185,23 +4159,21 @@
             "type": "number",
             "title": {
               "en": "Group ID"
-            },
-            "example": 0
+            }
           },
           {
             "name": "scene_id",
             "type": "number",
             "title": {
               "en": "Scene ID"
-            },
-            "example": 1
+            }
           }
         ]
       },
       {
         "id": "ZGRC_KEY_014_store_scene",
         "title": {
-          "en": "Store scene"
+          "en": "Scene stored"
         },
         "titleFormatted": {
           "en": "Group [[group]] store scene"
@@ -4246,23 +4218,21 @@
             "type": "number",
             "title": {
               "en": "Group ID"
-            },
-            "example": 0
+            }
           },
           {
             "name": "scene_id",
             "type": "number",
             "title": {
               "en": "Scene ID"
-            },
-            "example": 1
+            }
           }
         ]
       },
       {
         "id": "ZGRC_KEY_014_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Level moved"
         },
         "titleFormatted": {
           "en": "Group [[group]] move level"
@@ -4307,23 +4277,21 @@
             "type": "number",
             "title": {
               "en": "Move mode"
-            },
-            "example": 0
+            }
           },
           {
             "name": "rate",
             "type": "number",
             "title": {
               "en": "Rate"
-            },
-            "example": 0.2
+            }
           }
         ]
       },
       {
         "id": "ZGRC_KEY_014_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Level stopped"
         },
         "titleFormatted": {
           "en": "Group [[group]] stop level"
@@ -4366,7 +4334,7 @@
       {
         "id": "ZG2819S_RGBW_on",
         "title": {
-          "en": "On"
+          "en": "Turned on"
         },
         "titleFormatted": {
           "en": "Group [[group]] on"
@@ -4415,7 +4383,7 @@
       {
         "id": "ZG2819S_RGBW_off",
         "title": {
-          "en": "Off"
+          "en": "Turned off"
         },
         "titleFormatted": {
           "en": "Group [[group]] off"
@@ -4464,10 +4432,10 @@
       {
         "id": "ZG2819S_RGBW_move_to_color",
         "title": {
-          "en": "Move to color (XY)"
+          "en": "Color XY moved"
         },
         "titleFormatted": {
-          "en": "Group [[group]] move to color"
+          "en": "Group [[group]] color moved"
         },
         "args": [
           {
@@ -4515,31 +4483,28 @@
             "type": "number",
             "title": {
               "en": "Color X"
-            },
-            "example": 0.1
+            }
           },
           {
             "name": "color_y",
             "type": "number",
             "title": {
               "en": "Color Y"
-            },
-            "example": 0.1
+            }
           },
           {
             "name": "transition_time",
             "type": "number",
             "title": {
               "en": "Transition time"
-            },
-            "example": 0
+            }
           }
         ]
       },
       {
         "id": "ZG2819S_RGBW_recall_scene",
         "title": {
-          "en": "Recall scene"
+          "en": "Scene recalled"
         },
         "titleFormatted": {
           "en": "Group [[group]] recall scene"
@@ -4590,23 +4555,21 @@
             "type": "number",
             "title": {
               "en": "Group ID"
-            },
-            "example": 0
+            }
           },
           {
             "name": "scene_id",
             "type": "number",
             "title": {
               "en": "Scene ID"
-            },
-            "example": 1
+            }
           }
         ]
       },
       {
         "id": "ZG2819S_RGBW_store_scene",
         "title": {
-          "en": "Store scene"
+          "en": "Scene stored"
         },
         "titleFormatted": {
           "en": "Group [[group]] store scene"
@@ -4657,23 +4620,21 @@
             "type": "number",
             "title": {
               "en": "Group ID"
-            },
-            "example": 0
+            }
           },
           {
             "name": "scene_id",
             "type": "number",
             "title": {
               "en": "Scene ID"
-            },
-            "example": 1
+            }
           }
         ]
       },
       {
         "id": "ZG2819S_RGBW_level_step_with_onoff",
         "title": {
-          "en": "Step level (with On/Off)"
+          "en": "Level stepped"
         },
         "titleFormatted": {
           "en": "Group [[group]] step level"
@@ -4724,31 +4685,28 @@
             "type": "number",
             "title": {
               "en": "Mode"
-            },
-            "example": 0
+            }
           },
           {
             "name": "step_size",
             "type": "number",
             "title": {
               "en": "Step size"
-            },
-            "example": 0.2
+            }
           },
           {
             "name": "transition_time",
             "type": "number",
             "title": {
               "en": "Transition time"
-            },
-            "example": 0
+            }
           }
         ]
       },
       {
         "id": "ZG2819S_RGBW_level_move_with_onoff",
         "title": {
-          "en": "Move level (with On/Off)"
+          "en": "Level moved"
         },
         "titleFormatted": {
           "en": "Group [[group]] move level"
@@ -4799,23 +4757,21 @@
             "type": "number",
             "title": {
               "en": "Move mode"
-            },
-            "example": 0
+            }
           },
           {
             "name": "rate",
             "type": "number",
             "title": {
               "en": "Rate"
-            },
-            "example": 0.2
+            }
           }
         ]
       },
       {
         "id": "ZG2819S_RGBW_level_stop_with_onoff",
         "title": {
-          "en": "Stop level (with On/Off)"
+          "en": "Level stopped"
         },
         "titleFormatted": {
           "en": "Group [[group]] stop level"
@@ -4864,10 +4820,10 @@
       {
         "id": "ZG2819S_RGBW_move_to_color_temperature",
         "title": {
-          "en": "Move to color temperature"
+          "en": "Color temperature moved"
         },
         "titleFormatted": {
-          "en": "Group [[group]] move to color temperature"
+          "en": "Group [[group]] color temperature moved"
         },
         "args": [
           {
@@ -4915,23 +4871,21 @@
             "type": "number",
             "title": {
               "en": "Color temperature"
-            },
-            "example": 0
+            }
           },
           {
             "name": "transition_time",
             "type": "number",
             "title": {
               "en": "Transition time"
-            },
-            "example": 0
+            }
           }
         ]
       },
       {
         "id": "ZG2819S_RGBW_move_color_temperature",
         "title": {
-          "en": "Move color temperature"
+          "en": "Color temperature moved"
         },
         "titleFormatted": {
           "en": "Group [[group]] move color temperature"
@@ -4982,23 +4936,21 @@
             "type": "number",
             "title": {
               "en": "Move mode"
-            },
-            "example": 0
+            }
           },
           {
             "name": "rate",
             "type": "number",
             "title": {
               "en": "Rate"
-            },
-            "example": 0.2
+            }
           }
         ]
       },
       {
         "id": "ZG2819S_RGBW_stop_move_step",
         "title": {
-          "en": "Stop move step"
+          "en": "Move step stopped"
         },
         "titleFormatted": {
           "en": "Group [[group]] stop move step"
@@ -5050,7 +5002,7 @@
       {
         "id": "ZG2819S_RGBW_move_hue",
         "title": {
-          "en": "Move hue"
+          "en": "Hue moved"
         },
         "titleFormatted": {
           "en": "Group [[group]] move hue"
@@ -5101,23 +5053,21 @@
             "type": "number",
             "title": {
               "en": "Move mode"
-            },
-            "example": 0
+            }
           },
           {
             "name": "rate",
             "type": "number",
             "title": {
               "en": "Rate"
-            },
-            "example": 0.2
+            }
           }
         ]
       },
       {
         "id": "ZG2835_on",
         "title": {
-          "en": "On"
+          "en": "Turned on"
         },
         "args": [
           {
@@ -5130,7 +5080,7 @@
       {
         "id": "ZG2835_off",
         "title": {
-          "en": "Off"
+          "en": "Turned off"
         },
         "args": [
           {
@@ -5143,7 +5093,7 @@
       {
         "id": "ZG2835_move_to_level_with_onoff",
         "title": {
-          "en": "Move to level (with On/Off)"
+          "en": "Level moved"
         },
         "args": [
           {
@@ -5158,23 +5108,21 @@
             "type": "number",
             "title": {
               "en": "Level"
-            },
-            "example": 0
+            }
           },
           {
             "name": "transition_time",
             "type": "number",
             "title": {
               "en": "Transition time"
-            },
-            "example": 0
+            }
           }
         ]
       },
       {
         "id": "ZG2835_move_to_color_temperature",
         "title": {
-          "en": "Move to color temperature"
+          "en": "Color temperature moved"
         },
         "args": [
           {
@@ -5189,23 +5137,21 @@
             "type": "number",
             "title": {
               "en": "Color temperature"
-            },
-            "example": 0
+            }
           },
           {
             "name": "transition_time",
             "type": "number",
             "title": {
               "en": "Transition time"
-            },
-            "example": 0
+            }
           }
         ]
       },
       {
         "id": "ZG2835_move_to_hue",
         "title": {
-          "en": "Move to hue"
+          "en": "Hue moved"
         },
         "args": [
           {
@@ -5220,8 +5166,7 @@
             "type": "number",
             "title": {
               "en": "Hue"
-            },
-            "example": 0
+            }
           }
         ]
       }
@@ -5249,7 +5194,8 @@
         }
       },
       "platforms": [
-        "local"
+        "local",
+        "cloud"
       ],
       "connectivity": [
         "zigbee"
@@ -5280,7 +5226,7 @@
         "learnmode": {
           "image": "/drivers/S24013/assets/learnmode.svg",
           "instruction": {
-            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
+            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to put the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
           }
         }
       },
@@ -5301,7 +5247,8 @@
       ],
       "capabilitiesOptions": {},
       "platforms": [
-        "local"
+        "local",
+        "cloud"
       ],
       "connectivity": [
         "zigbee"
@@ -5330,7 +5277,7 @@
         "learnmode": {
           "image": "/drivers/S24015/assets/learnmode.svg",
           "instruction": {
-            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
+            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to put the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
           }
         }
       },
@@ -5367,7 +5314,8 @@
         }
       },
       "platforms": [
-        "local"
+        "local",
+        "cloud"
       ],
       "connectivity": [
         "zigbee"
@@ -5399,7 +5347,7 @@
         "learnmode": {
           "image": "/drivers/S24018_CCT/assets/learnmode.svg",
           "instruction": {
-            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
+            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to put the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
           }
         }
       },
@@ -5430,7 +5378,8 @@
         }
       },
       "platforms": [
-        "local"
+        "local",
+        "cloud"
       ],
       "connectivity": [
         "zigbee"
@@ -5461,7 +5410,7 @@
         "learnmode": {
           "image": "/drivers/S24018_DIM/assets/learnmode.svg",
           "instruction": {
-            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
+            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to put the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
           }
         }
       },
@@ -5511,7 +5460,8 @@
         }
       },
       "platforms": [
-        "local"
+        "local",
+        "cloud"
       ],
       "connectivity": [
         "zigbee"
@@ -5543,7 +5493,7 @@
         "learnmode": {
           "image": "/drivers/S24018_RGBCCT/assets/learnmode.svg",
           "instruction": {
-            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
+            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to put the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
           }
         }
       },
@@ -5593,7 +5543,8 @@
         }
       },
       "platforms": [
-        "local"
+        "local",
+        "cloud"
       ],
       "connectivity": [
         "zigbee"
@@ -5624,7 +5575,7 @@
         "learnmode": {
           "image": "/drivers/S24018_RGBW/assets/learnmode.svg",
           "instruction": {
-            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
+            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to put the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
           }
         }
       },
@@ -5660,7 +5611,8 @@
         }
       },
       "platforms": [
-        "local"
+        "local",
+        "cloud"
       ],
       "connectivity": [
         "zigbee"
@@ -5694,7 +5646,7 @@
         "learnmode": {
           "image": "/drivers/S24019/assets/learnmode.svg",
           "instruction": {
-            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
+            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to put the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
           }
         }
       },
@@ -5725,7 +5677,8 @@
         }
       },
       "platforms": [
-        "local"
+        "local",
+        "cloud"
       ],
       "connectivity": [
         "zigbee"
@@ -5756,7 +5709,7 @@
         "learnmode": {
           "image": "/drivers/S24020/assets/learnmode.svg",
           "instruction": {
-            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
+            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to put the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
           }
         }
       },
@@ -5787,7 +5740,8 @@
         }
       },
       "platforms": [
-        "local"
+        "local",
+        "cloud"
       ],
       "connectivity": [
         "zigbee"
@@ -5817,7 +5771,7 @@
         "learnmode": {
           "image": "/drivers/S24021/assets/learnmode.svg",
           "instruction": {
-            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
+            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to put the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
           }
         }
       },
@@ -5826,6 +5780,594 @@
         "small": "/drivers/S24021/assets/images/small.png"
       },
       "settings": []
+    },
+    {
+      "id": "S24029",
+      "name": {
+        "en": "S24029"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": false
+        },
+        "capabilitiesOptions": {
+          "measure_power": {
+            "isApproximated": true
+          }
+        },
+        "measure_power": {
+          "approximated": true
+        }
+      },
+      "images": {
+        "small": "/drivers/S24029/assets/images/small.png",
+        "large": "/drivers/S24029/assets/images/large.png",
+        "xlarge": "/drivers/S24029/assets/images/xlarge.png"
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "The Light Group AS",
+          "THE LIGHT GROUP AS",
+          "the light group as",
+          "The light group AS"
+        ],
+        "productId": [
+          "S24029"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              1794,
+              2820
+            ],
+            "bindings": [
+              6,
+              8,
+              1794,
+              2820
+            ]
+          }
+        },
+        "learnmode": {
+          "instruction": {
+            "en": "To Include, quick press Config Button for two times."
+          }
+        }
+      },
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "energy": {}
+    },
+    {
+      "id": "S24030",
+      "name": {
+        "en": "S24030 Thermostat"
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "The Light Group AS",
+          "THE LIGHT GROUP AS",
+          "the light group as",
+          "The light group AS"
+        ],
+        "productId": [
+          "S24030"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              10,
+              28,
+              30,
+              25,
+              513,
+              516,
+              2820,
+              1794,
+              32772
+            ],
+            "bindings": [
+              0,
+              2,
+              6,
+              10,
+              28,
+              30,
+              1794,
+              2820,
+              32772,
+              513,
+              516
+            ]
+          }
+        },
+        "learnmode": {
+          "instruction": {
+            "en": "For inclusion, long press M for 5s when in \"Advance settings -> in-network mode\"."
+          }
+        }
+      },
+      "class": "thermostat",
+      "images": {
+        "small": "/drivers/S24030/assets/images/small.png",
+        "large": "/drivers/S24030/assets/images/large.png",
+        "xlarge": "/drivers/S24030/assets/images/xlarge.png"
+      },
+      "capabilities": [
+        "onoff",
+        "measure_power",
+        "meter_power",
+        "t7e_zg_window_state",
+        "child_lock",
+        "target_temperature",
+        "measure_temperature",
+        "t7e_zg_thermostat_mode",
+        "eco_mode",
+        "frost",
+        "t7e_zg_regulator_percentage"
+      ],
+      "energy": {
+        "approximation": {
+          "usageOn": 5,
+          "usageOff": 1
+        },
+        "cumulative": true
+      },
+      "capabilitiesOptions": {
+        "target_temperature": {
+          "min": 5,
+          "max": 40,
+          "step": 0.5
+        },
+        "button.calibrate": {
+          "maintenanceAction": false,
+          "title": {
+            "en": "Start calibration"
+          },
+          "desc": {
+            "en": "Start the sensor calibration process."
+          }
+        },
+        "button.reset_meter": {
+          "maintenanceAction": false,
+          "title": {
+            "en": "Reset power meter"
+          },
+          "desc": {
+            "en": "Reset the accumulated power usage (kWh), this can not be restored."
+          }
+        },
+        "measure_power": {
+          "approximated": true
+        }
+      },
+      "connectivity": [
+        "zigbee",
+        "cloud"
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "settings": [
+        {
+          "id": "thermostat_regulator_mode",
+          "label": {
+            "en": "Thermostat/Regulator mode"
+          },
+          "hint": {
+            "en": "Made to take effect. We need to go back the main interface and click this APP `thermostat` icon to launch application again."
+          },
+          "type": "dropdown",
+          "value": "0",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Thermostat Mode"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Regulator Heating"
+              }
+            }
+          ]
+        },
+        {
+          "id": "regulator",
+          "type": "dropdown",
+          "value": "30",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "OFF"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "1 min"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "2 min"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "3 min"
+              }
+            },
+            {
+              "id": "4",
+              "label": {
+                "en": "4 min"
+              }
+            },
+            {
+              "id": "5",
+              "label": {
+                "en": "5 min"
+              }
+            },
+            {
+              "id": "6",
+              "label": {
+                "en": "6 min"
+              }
+            },
+            {
+              "id": "7",
+              "label": {
+                "en": "7 min"
+              }
+            },
+            {
+              "id": "8",
+              "label": {
+                "en": "8 min"
+              }
+            },
+            {
+              "id": "9",
+              "label": {
+                "en": "9 min"
+              }
+            },
+            {
+              "id": "10",
+              "label": {
+                "en": "10 min"
+              }
+            },
+            {
+              "id": "11",
+              "label": {
+                "en": "11 min"
+              }
+            },
+            {
+              "id": "12",
+              "label": {
+                "en": "12 min"
+              }
+            },
+            {
+              "id": "13",
+              "label": {
+                "en": "13 min"
+              }
+            },
+            {
+              "id": "14",
+              "label": {
+                "en": "14 min"
+              }
+            },
+            {
+              "id": "15",
+              "label": {
+                "en": "15 min"
+              }
+            },
+            {
+              "id": "16",
+              "label": {
+                "en": "16 min"
+              }
+            },
+            {
+              "id": "17",
+              "label": {
+                "en": "17 min"
+              }
+            },
+            {
+              "id": "18",
+              "label": {
+                "en": "18 min"
+              }
+            },
+            {
+              "id": "19",
+              "label": {
+                "en": "19 min"
+              }
+            },
+            {
+              "id": "20",
+              "label": {
+                "en": "20 min"
+              }
+            },
+            {
+              "id": "21",
+              "label": {
+                "en": "21 min"
+              }
+            },
+            {
+              "id": "22",
+              "label": {
+                "en": "22 min"
+              }
+            },
+            {
+              "id": "23",
+              "label": {
+                "en": "23 min"
+              }
+            },
+            {
+              "id": "24",
+              "label": {
+                "en": "24 min"
+              }
+            },
+            {
+              "id": "25",
+              "label": {
+                "en": "25 min"
+              }
+            },
+            {
+              "id": "26",
+              "label": {
+                "en": "26 min"
+              }
+            },
+            {
+              "id": "27",
+              "label": {
+                "en": "27 min"
+              }
+            },
+            {
+              "id": "28",
+              "label": {
+                "en": "28 min"
+              }
+            },
+            {
+              "id": "29",
+              "label": {
+                "en": "29 min"
+              }
+            },
+            {
+              "id": "30",
+              "label": {
+                "en": "30 min"
+              }
+            }
+          ],
+          "units": {
+            "en": "min"
+          },
+          "label": {
+            "en": "Regulator heating minute"
+          },
+          "hint": {
+            "en": ""
+          }
+        },
+        {
+          "id": "sensor_mode",
+          "type": "dropdown",
+          "value": "f",
+          "label": {
+            "en": "Sensor mode "
+          },
+          "values": [
+            {
+              "id": "a",
+              "label": {
+                "en": "A "
+              }
+            },
+            {
+              "id": "f",
+              "label": {
+                "en": "F "
+              }
+            },
+            {
+              "id": "fp",
+              "label": {
+                "en": "FP "
+              }
+            },
+            {
+              "id": "af",
+              "label": {
+                "en": "AF "
+              }
+            },
+            {
+              "id": "a2",
+              "label": {
+                "en": "A2 "
+              }
+            },
+            {
+              "id": "a2f",
+              "label": {
+                "en": "A2F "
+              }
+            },
+            {
+              "id": "p",
+              "label": {
+                "en": "P "
+              }
+            }
+          ]
+        },
+        {
+          "id": "lcd_backlight_wait",
+          "label": {
+            "en": "LCD backlight standby"
+          },
+          "type": "dropdown",
+          "units": {
+            "en": "%"
+          },
+          "value": "10",
+          "values": [
+            {
+              "id": "10",
+              "label": {
+                "en": "10%"
+              }
+            },
+            {
+              "id": "20",
+              "label": {
+                "en": "20%"
+              }
+            },
+            {
+              "id": "30",
+              "label": {
+                "en": "30%"
+              }
+            },
+            {
+              "id": "40",
+              "label": {
+                "en": "40%"
+              }
+            },
+            {
+              "id": "50",
+              "label": {
+                "en": "50%"
+              }
+            },
+            {
+              "id": "60",
+              "label": {
+                "en": "60%"
+              }
+            },
+            {
+              "id": "70",
+              "label": {
+                "en": "70%"
+              }
+            },
+            {
+              "id": "80",
+              "label": {
+                "en": "80%"
+              }
+            },
+            {
+              "id": "90",
+              "label": {
+                "en": "90%"
+              }
+            },
+            {
+              "id": "100",
+              "label": {
+                "en": "100%"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Window"
+          },
+          "children": [
+            {
+              "id": "window_check",
+              "label": {
+                "en": "Window check"
+              },
+              "type": "checkbox",
+              "value": false
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "App version"
+          },
+          "children": [
+            {
+              "id": "app_version",
+              "type": "label",
+              "label": {
+                "en": "App version"
+              },
+              "value": "v1.0.2303.2",
+              "hint": {
+                "en": "The App version of the device."
+              }
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "S32050",
@@ -5848,7 +6390,8 @@
         }
       },
       "platforms": [
-        "local"
+        "local",
+        "cloud"
       ],
       "connectivity": [
         "zigbee"
@@ -5878,7 +6421,7 @@
         "learnmode": {
           "image": "/drivers/S32050/assets/learnmode.svg",
           "instruction": {
-            "en": "Quickly press the Prog. button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode."
+            "en": "Quickly press the Prog. button on the device 5 times or repeatedly power OFF/ON 5 times to put the device into pair mode."
           }
         }
       },
@@ -5909,7 +6452,8 @@
         }
       },
       "platforms": [
-        "local"
+        "local",
+        "cloud"
       ],
       "connectivity": [
         "zigbee"
@@ -5939,7 +6483,7 @@
         "learnmode": {
           "image": "/drivers/S32051/assets/learnmode.svg",
           "instruction": {
-            "en": "Quickly press the Prog. button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode."
+            "en": "Quickly press the Prog. button on the device 5 times or repeatedly power OFF/ON 5 times to put the device into pair mode."
           }
         }
       },
@@ -5976,7 +6520,8 @@
         }
       },
       "platforms": [
-        "local"
+        "local",
+        "cloud"
       ],
       "connectivity": [
         "zigbee"
@@ -6007,7 +6552,7 @@
         "learnmode": {
           "image": "/drivers/S32052/assets/learnmode.svg",
           "instruction": {
-            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
+            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to put the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
           }
         }
       },
@@ -6038,7 +6583,8 @@
         }
       },
       "platforms": [
-        "local"
+        "local",
+        "cloud"
       ],
       "connectivity": [
         "zigbee"
@@ -6068,7 +6614,7 @@
         "learnmode": {
           "image": "/drivers/S32053/assets/learnmode.svg",
           "instruction": {
-            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
+            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to put the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
           }
         }
       },
@@ -6099,7 +6645,8 @@
         }
       },
       "platforms": [
-        "local"
+        "local",
+        "cloud"
       ],
       "connectivity": [
         "zigbee"
@@ -6129,7 +6676,7 @@
         "learnmode": {
           "image": "/drivers/S32054/assets/learnmode.svg",
           "instruction": {
-            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
+            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to put the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
           }
         }
       },
@@ -6166,7 +6713,8 @@
         }
       },
       "platforms": [
-        "local"
+        "local",
+        "cloud"
       ],
       "connectivity": [
         "zigbee"
@@ -6197,7 +6745,7 @@
         "learnmode": {
           "image": "/drivers/S32055/assets/learnmode.svg",
           "instruction": {
-            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
+            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to put the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
           }
         }
       },
@@ -6247,7 +6795,8 @@
         }
       },
       "platforms": [
-        "local"
+        "local",
+        "cloud"
       ],
       "connectivity": [
         "zigbee"
@@ -6278,7 +6827,7 @@
         "learnmode": {
           "image": "/drivers/S32056/assets/learnmode.svg",
           "instruction": {
-            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to make the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
+            "en": "Quickly press the Reset button on the device 5 times or repeatedly power OFF/ON 5 times to put the device into pair mode. The device slowly flashing means the device is in pair mode. The pair mode generally lasts for 15 seconds after each power on. Re-power the device to enter pair mode again."
           }
         }
       },
@@ -6303,7 +6852,8 @@
         ]
       },
       "platforms": [
-        "local"
+        "local",
+        "cloud"
       ],
       "connectivity": [
         "zigbee"
@@ -6358,7 +6908,8 @@
         ]
       },
       "platforms": [
-        "local"
+        "local",
+        "cloud"
       ],
       "connectivity": [
         "zigbee"
@@ -6440,7 +6991,8 @@
         ]
       },
       "platforms": [
-        "local"
+        "local",
+        "cloud"
       ],
       "connectivity": [
         "zigbee"
@@ -6496,7 +7048,8 @@
         ]
       },
       "platforms": [
-        "local"
+        "local",
+        "cloud"
       ],
       "connectivity": [
         "zigbee"
@@ -6552,7 +7105,8 @@
         ]
       },
       "platforms": [
-        "local"
+        "local",
+        "cloud"
       ],
       "connectivity": [
         "zigbee"
@@ -6628,7 +7182,8 @@
         ]
       },
       "platforms": [
-        "local"
+        "local",
+        "cloud"
       ],
       "connectivity": [
         "zigbee"
@@ -6685,7 +7240,7 @@
         "learnmode": {
           "image": "/drivers/S57009/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pairing\nStep 1: Remove the remote from previous zigbee network if it has already been added to it, otherwise pairing will fail. Please refer to the part \"Factory Reset Manually\".\nStep 2: Press and hold down \"Prog.\" button until LED indicator turns on.\nStep 3: Immediately short press \"S1\" button to search nearby network, indicator flashes every 1 second, 20 seconds timeout if there is no network. Indicator will then blink 5 times quickly for successful pairing.\n\n# Factory Reset Manually\nStep 1: Press and hold down \"Prog.\" button until LED indicator turns on.\nStep 2: Immediately short press 5 times \"Prog.\" button continuously, indicator flashes 3 times quickly to indicate successful reset."
+            "en": "Press and hold down Prog button until LED indicator turns on. Immediately short press S1 button to put the device into pair mode.\n\nIf pairing fails reset the device. Press and hold down Prog button until LED indicator turns on. Immediately short press 5 times Prog button continuously, indicator flashes 3 times quickly to indicate successful reset."
           }
         }
       },
@@ -6710,7 +7265,8 @@
         ]
       },
       "platforms": [
-        "local"
+        "local",
+        "cloud"
       ],
       "connectivity": [
         "zigbee"
@@ -6768,7 +7324,8 @@
         "my_thermostat_floor_sensor"
       ],
       "platforms": [
-        "local"
+        "local",
+        "cloud"
       ],
       "connectivity": [
         "zigbee"
@@ -6803,7 +7360,7 @@
         "learnmode": {
           "image": "/drivers/zg_thermostat/assets/learnmode.svg",
           "instruction": {
-            "en": "# Pair\n1) At OFF mode (Off icon), press and hold up and down buttons at the same time for over 5 seconds to enter Settings Menu.\n2) Short press move up and down button to select a settings item, then short press button F to enter selected item.\n3) Select \"Add\", then short press button F.\n\n# Factory Reset\nEnter settings item, select \"Reset\", then short press button F."
+            "en": "Switch to OFF mode, then press and hold up and down buttons at the same time for over 5 seconds to enter Settings Menu. Short press move up and down button to select a settings item, then short press button F to enter selected item. Select Add, then short press button F to put the device into pair mode."
           }
         }
       },
@@ -6815,6 +7372,84 @@
     }
   ],
   "capabilities": {
+    "child_lock": {
+      "type": "boolean",
+      "title": {
+        "en": "Child lock"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "button",
+      "uiQuickAction": false,
+      "values": [
+        {
+          "id": "off",
+          "title": {
+            "en": "OFF",
+            "zh": "关闭"
+          }
+        },
+        {
+          "id": "on",
+          "title": {
+            "en": "ON",
+            "zh": "开启"
+          }
+        }
+      ]
+    },
+    "eco_mode": {
+      "type": "boolean",
+      "title": {
+        "en": "ECO Mode"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "button",
+      "uiQuickAction": false,
+      "values": [
+        {
+          "id": "off",
+          "title": {
+            "en": "OFF",
+            "zh": "关闭"
+          }
+        },
+        {
+          "id": "on",
+          "title": {
+            "en": "ON",
+            "zh": "开启"
+          }
+        }
+      ]
+    },
+    "frost": {
+      "type": "boolean",
+      "title": {
+        "en": "FROST-protection"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "button",
+      "uiQuickAction": false,
+      "values": [
+        {
+          "id": "off",
+          "title": {
+            "en": "OFF",
+            "zh": "关闭"
+          }
+        },
+        {
+          "id": "on",
+          "title": {
+            "en": "ON",
+            "zh": "开启"
+          }
+        }
+      ]
+    },
     "my_device_operating_mode": {
       "id": "my_device_operating_mode",
       "title": {
@@ -6917,6 +7552,84 @@
         "en": "°C"
       },
       "icon": "/assets/temperature_icon.svg"
+    },
+    "t7e_zg_regulator_percentage": {
+      "type": "number",
+      "title": {
+        "en": "Regulator %"
+      },
+      "chartType": "stepLine",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "value": 20,
+      "units": {
+        "en": "%"
+      },
+      "getable": true,
+      "setable": true,
+      "uiQuickAction": false,
+      "uiComponent": "slider"
+    },
+    "t7e_zg_thermostat_mode": {
+      "type": "enum",
+      "title": {
+        "en": "My thermostat mode"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "picker",
+      "uiQuickAction": true,
+      "values": [
+        {
+          "id": "heat",
+          "title": {
+            "en": "Heat"
+          }
+        },
+        {
+          "id": "cool",
+          "title": {
+            "en": "Cool"
+          }
+        }
+      ]
+    },
+    "t7e_zg_window_state": {
+      "type": "enum",
+      "title": {
+        "en": "Window open flag"
+      },
+      "desc": {
+        "en": "Window open flag"
+      },
+      "insights": true,
+      "insightsTitleTrue": {
+        "en": "Window is open"
+      },
+      "insightsTitleFalse": {
+        "en": "Window is closed"
+      },
+      "getable": true,
+      "setable": false,
+      "values": [
+        {
+          "id": "closed",
+          "title": {
+            "en": "Closed",
+            "zh": "门关闭的"
+          }
+        },
+        {
+          "id": "opened",
+          "title": {
+            "en": "Opened",
+            "zh": "门打开的"
+          }
+        }
+      ],
+      "uiComponent": "sensor",
+      "icon": "/assets/window_open_check.svg"
     }
   }
 }
